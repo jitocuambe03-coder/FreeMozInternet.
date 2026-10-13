@@ -1,1 +1,89 @@
 
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#087f5b">
+<title>Free Moz Internet</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f7f4;
+  margin: 0;
+  color: #18352c;
+}
+header {
+  background: #087f5b;
+  color: white;
+  padding: 25px 18px;
+  text-align: center;
+}
+main {
+  padding: 18px;
+  max-width: 500px;
+  margin: auto;
+}
+.card {
+  background: white;
+  padding: 20px;
+  margin: 16px 0;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px #0001;
+}
+button {
+  background: #087f5b;
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  padding: 13px;
+  width: 100%;
+  font-size: 16px;
+}
+h2 { color: #087f5b; }
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #52665e;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>📶 Free Moz Internet</h1>
+  <p>Conecta-te. Descobre. Poupa.</p>
+</header>
+<main>
+  <section class="card">
+    <h2>📡 Wi-Fi gratuito</h2>
+    <p>Procura redes Wi-Fi públicas em locais como bibliotecas, escolas e espaços comunitários.</p>
+    <button onclick="wifi()">Procurar opções</button>
+    <p id="wifi"></p>
+  </section>
+
+  <section class="card">
+    <h2>📱 Poupar dados móveis</h2>
+    <p>Ativa a poupança de dados no teu Android e reduz o consumo de Internet.</p>
+    <button onclick="alert('Abre as Definições do Android e procura Rede e Internet ou Ligações > Utilização de dados > Poupança de dados.')">Ver instruções</button>
+  </section>
+
+  <section class="card">
+    <h2>📲 Vodacom Moçambique</h2>
+    <p>Consulta os pacotes e as ofertas oficiais disponíveis para o teu número.</p>
+    <button onclick="window.open('https://www.vm.co.mz/','_blank')">Consultar Vodacom</button>
+  </section>
+
+  <section class="card">
+    <h2>🔒 Segurança</h2>
+    <p>Evita redes Wi-Fi desconhecidas que solicitem senhas, dados bancários ou informações pessoais.</p>
+  </section>
+</main>
+<footer>Free Moz Internet © 2026</footer>
+<script>
+function wifi() {
+  document.getElementById('wifi').textContent =
+  'Abre as Definições do telemóvel > Wi-Fi para procurar redes públicas disponíveis perto de ti.';
+}
+</script>
+</body>
+</html>
